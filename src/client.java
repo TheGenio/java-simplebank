@@ -14,7 +14,6 @@ public class client {
     }
 
     // setters
-
     public void setbalance(double balance){
         this.balance = balance;
     }
@@ -37,7 +36,6 @@ public class client {
     }
 
 
-
     public boolean transfer(double amount){
         double temp = getBalance() + amount;
         setbalance(temp);
@@ -45,7 +43,6 @@ public class client {
     }
 
     public boolean checkBalance(double amount){
-
         if (this.balance > amount){
             return true;
         } else

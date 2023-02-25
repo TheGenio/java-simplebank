@@ -18,9 +18,11 @@ public class bank {
 
                 System.out.println("Please enter your username");
                 String userId = scanner.next();
+                //TODO create a username check, see if username is already in use
 
                 System.out.println("Please enter your password");
                 String password = scanner.next();
+                //TODO create a method to see if password is correct
 
                 System.out.println("Please enter you balance");
                 Double balance = scanner.nextDouble();
@@ -29,7 +31,7 @@ public class bank {
                 clients.add(newClient); //adds the new user to the array list
 
                 System.out.println("Created a new user :) Welcome to the future");
-
+                System.out.println("-------------------------------------------");
             } else if (choice == 'L') { // if user wants to log in
 
                 System.out.println("Please enter your username");
@@ -37,6 +39,7 @@ public class bank {
                 System.out.println("Please enter your password");
                 String password = scanner.next();
                 boolean found = false;
+                //TODO create a log in verefication method
 
                 for (client user : clients) {
                     if (user.getUserId().equals(userId) && user.getPassword().equals(password)) {

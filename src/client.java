@@ -1,24 +1,26 @@
-public class client {
+import java.io.Serializable;
+
+public class client implements Serializable {
     private double balance;
-    private String user_id;
+    private String userId;
     private String password;
 
     public client(){
         this(0,"Default","default");
     }
 
-    public client(double balance, String user_id, String password){
+    public client(double balance, String userId, String password){
         this.balance = balance;
-        this.user_id = user_id;
+        this.userId = userId;
         this.password = password;
     }
 
     // setters
-    public void setbalance(double balance){
+    public void setBalance(double balance){
         this.balance = balance;
     }
-    public void setUserId(String user_id){
-        this.user_id = user_id;
+    public void setUserId(String userId){
+        this.userId = userId;
     }
     public void setPassword(String password){
         this.password = password;
@@ -29,7 +31,7 @@ public class client {
         return this.balance;
     }
     public String getUserId(){
-        return this.user_id;
+        return this.userId;
     }
     public String getPassword(){
         return this.password;
@@ -38,7 +40,7 @@ public class client {
 
     public boolean transfer(double amount){
         double temp = getBalance() + amount;
-        setbalance(temp);
+        setBalance(temp);
         return true;
     }
 
@@ -48,6 +50,10 @@ public class client {
         } else
             return false;
 
+    }
+
+    public String toString(){
+        return this.getUserId();
     }
 
 

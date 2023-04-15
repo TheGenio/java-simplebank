@@ -12,7 +12,7 @@ public class banker extends client implements Serializable {
 
     public void GetAllUsers(){
         for(client client : clients){
-            System.out.println("Clients are: " + client);
+            System.out.println("Clients are: " + client + " Balance is: "+ client.getBalance());
         }
 
     }

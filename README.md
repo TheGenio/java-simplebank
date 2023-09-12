@@ -11,7 +11,7 @@ and stores data in text files.
 Simple Bank is a simple banking application. It allows users to create and manage bank accounts, make transactions, and view account balances.
 
 
-Thhis simple banking application is implemented in Java.
+This simple banking application is implemented in Java.
 
 ## Features
 
